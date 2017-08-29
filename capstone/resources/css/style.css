@@ -1,0 +1,462 @@
+html	{
+	font-size: 16px;
+	font-family: 'Roboto';
+	color: #717171;
+}	
+
+h1, h2 {
+	color: #414141;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+h2	{
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+
+@media only screen and (max-width : 480px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+	}
+}
+
+/*----HEADER----*/
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	margin:0 1.5rem;
+}
+
+.mobile {
+	display: none;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 2.5rem;
+}
+
+.logo a {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	color: #717171;
+	font-weight: lighter;
+}
+
+.logo a .colmar {
+	font-weight: bold;
+	color: #000;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+li {
+	padding-left:1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*----NAVIGATION----*/
+.desktop ul li a:hover {
+	color: #4891dc;
+	border-bottom: 2px solid #4891dc;
+}
+
+@media only screen and (max-width : 480px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+	}
+}
+
+/*----HERO----*/
+.hero {
+	background-color: #f1f1f1;
+	display: flex;
+	align-items: center;
+	padding: 2rem 1.5rem;
+}
+
+.hero .image-container {
+	width: 65%;
+	margin-right: 2.5rem;
+}
+
+.hero .image-container img{
+	max-width: 100%;
+	display: block;
+}
+
+.call-to-action {
+	width: 40%;
+}
+
+.call-to-action h1 {
+	font-size: 2.75rem;
+}
+
+.call-to-action h1, h2{
+	margin-bottom: 1rem;
+}
+
+button {
+	font-size: 1rem;
+	color: #ffffff;
+	background-color: #414141;
+	border: none;
+	text-align: center;
+	padding: 0.75rem 0;
+	min-width: 60%;
+}
+
+button:hover{
+	background-color: #4891dc;
+}
+
+
+@media only screen and (max-width : 480px) {
+	.hero {
+		display: block;
+		padding:0;
+		width: 100%;
+	}
+	.hero .image-container {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.call-to-action {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 2rem 1.5rem;
+	}
+
+	.call-to-action h1 {
+		font-size: 2rem;
+	}
+
+	button {
+		background-color: #b1b1b1;
+		width: 100%;
+	}
+}
+
+/*----MAIN----*/
+
+/*----INFORMATION----*/
+.information {
+	display: flex;
+}
+
+.feature {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.feature .image-container {
+	margin: 0 0 1.5rem 0;
+}
+
+.feature .image-container img{
+	max-width: 100%;
+	display: block;
+}
+
+.feature h1 {
+	margin-bottom: 1.5rem;
+}
+
+.feature span {
+	font-weight: bold;
+	display: block;
+	margin-top: 2rem;
+}
+
+.highlights {
+	width: 40%;
+	border-left: 1px solid #f1f1f1;
+	display: flex;
+	flex-direction: column;
+}
+
+.highlights .mobile {
+	display: none;
+}
+
+.highlight {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
+
+.highlight .image-container {
+	width: 35%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.highlight .image-container img{
+	max-width: 100%;
+}
+
+.highlight .content {
+	width: 65%;
+}
+
+.highlight .content a {
+	color: #4891dc;
+	display: block;
+	padding-top: 1rem;
+}
+
+.highlight .content a:hover {
+	text-decoration: underline;
+}
+
+.highlight.top {
+	margin-top: 1rem;
+}
+.highlight.middle {
+	border: 1px solid #f1f1f1;
+}
+.highlight.bottom {
+	background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 480px) {
+	.information .feature {
+		display: none;
+	}
+
+	.highlights {
+		width: 100%;
+		margin: 1rem 1rem 2rem 1rem;
+	}
+
+	.highlights .desktop {
+		display: none;
+	}
+
+	.highlights .mobile {
+		display: initial;
+	}
+
+	.highlight {
+		display: block;
+		padding: 0;
+	}
+
+	.highlight .image-container {
+		width: 100%;
+	}
+
+	.highlight .image-container img{
+		max-width: 100%;
+		padding-bottom: 1rem;
+	}
+
+	.highlight .content {
+		width: 100%;
+	}
+
+	.highlight.top {
+		margin-top:0;
+	}
+
+	.highlight.middle {
+		border:none;
+		margin: 2rem 0;
+	}
+	.highlight.bottom {
+		background-color: #fff;
+	}
+
+}
+
+/*----LESSONS----*/
+.lessons {
+	background-color: #f1f1f1;
+	padding: 2rem 4.5rem;
+	max-width: 100%;
+}
+
+.lessons h1 {
+	text-align: center;
+}
+
+.courses {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.course {
+	background-color: #fff;
+	width: 31.5%;
+	margin-top: 2rem;
+}
+
+.course .image-container {
+	height: auto;
+}
+
+.course .image-container img {
+	max-width: 100%;
+}
+
+.course .content {
+	padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course p.type {
+	text-transform: uppercase;
+	padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+	.lessons {
+		background-color: #fff;
+		border-top: 1px solid #f1f1f1;
+		padding: 2rem 1rem;
+	}
+
+	.lessons h2 {
+		text-align: left;
+		background-color: #f1f1f1;
+		padding: 1.5rem;
+		margin-bottom: -1rem;
+	}
+
+	.courses {
+		display: block;
+		width: 100%;
+	}
+
+	.course {
+		width: 100%;
+	}
+
+	.course .content {
+		padding: 0;
+	}
+
+	.course .image-container {
+		display: none;
+	}
+
+	.course p {
+		display: none;
+	}
+}
+
+/*----THESIS----*/
+.thesis {
+	margin: 2rem 0;
+}
+.thesis h1 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.thesis .feature{
+	padding: 0 1.5rem;
+}
+
+.thesis .highlights {
+	border-left: none;
+}
+
+.thesis .highlight.top {
+	margin-top: 0rem;
+	background-color: #f1f1f1;
+}
+
+.thesis .highlight.bottom {
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+	.thesis {
+		margin-bottom: 0;
+		border-top: 1px solid #f1f1f1;
+	}
+
+	.thesis h1 {
+		padding-top: 2rem;
+	}
+
+	.thesis .feature {
+		width: 100%;
+		padding: 0;
+	}
+
+	.thesis .feature .image-container {
+		margin: 0;
+	}
+
+	.thesis .feature .content {
+		display: none;
+	}
+
+	.thesis .highlights {
+		display: none;
+	}
+}
+/*----FOOTER----*/
+footer {
+	
+	padding: 1rem 1.5rem 3rem 1.5rem;
+	border-top:1px solid #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+}
+
+footer ul li a {
+	font-size: 0.8755rem;
+	color: #717171;
+}
+
+@media only screen and (max-width: 480px) {
+	footer ul {
+		display: none;
+	}
+}
